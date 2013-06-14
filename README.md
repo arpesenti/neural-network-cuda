@@ -11,13 +11,13 @@ Documentation
 
 Here is a description of the interface offered by our library. It consists of 4 functions:
 
-CREATENET
-TRAINNET
-TESTNET
-APPLYNET
+- CREATENET
+- TRAINNET
+- TESTNET
+- APPLYNET
 
 
-
+```
 CREATENET Create neural network with random initialization
 [ net ] = createNet( numInput, numOutput, hiddenLayers, netType, hiddenFunction )
 
@@ -30,8 +30,9 @@ CREATENET Create neural network with random initialization
    hiddenFunction	= (optional) activation function for hidden neurons. 'sigmoid' or 'tanh'
  OUTPUT:
    net			= struct containing the neural network ready for the training
+```
 
-
+```
 TRAINNET Train the network constructed with createNet
 [ net , mse] = trainNet( net, samples, targets, gpu, batchSize, numEpochs, learningRate )
 
@@ -46,8 +47,9 @@ TRAINNET Train the network constructed with createNet
    net 			= trained net
    mse 			= mean square error in case of regression, and cross entropy in case of
              classification. It's computed on the training samples.
+```
 
-
+```
 TESTNET Apply the trained neural network to a test dataset, computing the error
  [ error predicted ] = testNet( net, samples, targets, gpu )
 
@@ -61,8 +63,9 @@ TESTNET Apply the trained neural network to a test dataset, computing the error
                		    or class error in case of classification
    predicted 		 = size(targets) matrix containing the predicted output for
                		    all input samples
+```
 
-
+```
 APPLYNET Apply the trained neural network to one or more inputs
 [ predicted ] = applyNet( net, inputs, gpu )
 
@@ -73,4 +76,4 @@ APPLYNET Apply the trained neural network to one or more inputs
  OUTPUT:
    predicted 		= net.layers(end) matrix containing the predicted output for all input 
    values
-
+```

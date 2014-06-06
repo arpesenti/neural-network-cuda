@@ -1,3 +1,4 @@
+% example on regression analysis
 s = -pi;
 e = pi;
 N = 50; 

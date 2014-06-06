@@ -4,7 +4,7 @@ neural-network-cuda
 Description
 -------------------
 
-Small MATLAB library implementing neural network training exploiting CUDA
+Small MATLAB library implementing neural network training exploiting CUDA, developed during the *Cognitive Robotics* course at *Politecnico di Milano* by Armando Pesenti Gritti and Oscar Tarabini.
 
 Documentation
 -------------------

@@ -77,3 +77,7 @@ APPLYNET Apply the trained neural network to one or more inputs
    predicted 		= net.layers(end) matrix containing the predicted output for all input 
    values
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/arpesenti/neural-network-cuda/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
